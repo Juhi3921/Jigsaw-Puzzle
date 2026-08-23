@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
-    background-color: #fff1e7;
+    background-color: #553a26;
     margin: 0;
     padding: 0;
     border-width: 0;
@@ -25,7 +25,7 @@ body {
   }
 
   #menu li:hover {
-    background-color: #ffecdb;
+    background-color: #443528;
   }
 
   #forPuzzle {
@@ -35,7 +35,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff1e7;
+    background-color: #bebebe;
     overflow: hidden;
   }
 
@@ -56,3 +56,179 @@ body {
     overflow: hidden;
     position: absolute;
   }
+
+#home-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 70px 30px 40px;
+}
+
+.home-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Puzzle icon */
+
+.puzzle-logo {
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+
+/* Main title */
+
+.home-content h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: #3d302b;
+}
+
+.home-tagline {
+  margin: 8px 0 12px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #7b5e52;
+}
+
+.home-description {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6f625c;
+}
+
+.puzzle-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.how-to-play {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.how-to-play h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: #3d302b;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(120, 90, 70, 0.15);
+  border-radius: 14px;
+  padding: 20px 15px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+.step-icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.step h3 {
+  margin: 5px 0 8px;
+  font-size: 16px;
+  color: #44362f;
+}
+
+.step p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #756963;
+}
+
+.quick-info {
+  max-width: 850px;
+  margin: 28px auto 25px;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.quick-info div {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.quick-info strong {
+  display: block;
+  font-size: 14px;
+  color: #4a3b34;
+  margin-bottom: 5px;
+}
+
+.quick-info span {
+  font-size: 12px;
+  color: #786b64;
+}
+
+.bottom-message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #786b64;
+}
+
+.bottom-message strong {
+  color: #4d3b32;
+}
+
+
+@media (max-width: 800px) {
+
+  #home-page {
+    padding: 65px 20px 30px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-info {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content h1 {
+    font-size: 30px;
+  }
+
+  .home-tagline {
+    font-size: 18px;
+  }
+
+}
